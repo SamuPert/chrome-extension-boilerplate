@@ -1,0 +1,29 @@
+{
+	"name": "Chrome Extension...",
+	"description": "This extension is created for...",
+	"version": "1.0",
+	"manifest_version": 3,
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "/images/icon_16.png",
+			"32": "/images/icon_32.png",
+			"48": "/images/icon_48.png",
+			"128": "/images/icon_128.png"
+		}
+	},
+	"permissions": [
+		"storage",
+		"scripting"
+	],
+	"background": {
+		"service_worker": "background.bundle.js"
+	},
+	"icons": {
+		"16": "/images/icon_16.png",
+		"32": "/images/icon_32.png",
+		"48": "/images/icon_48.png",
+		"128": "/images/icon_128.png"
+	},
+	"options_page": "options.html"
+}
