@@ -5,7 +5,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = (env) => {
 	return {
-		mode: env.production ? "production" : 'development',
+		// Mode is forced to production because chrome does not allow unsafe-eval in extensions.
+		mode: "production",
 		entry: {
 			background: path.resolve(__dirname, "..", "src", "background.ts"),
 			popup: path.resolve(__dirname, "..", "src", "popup", "popup.ts"),
